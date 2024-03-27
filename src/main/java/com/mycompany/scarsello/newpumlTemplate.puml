@@ -1,0 +1,21 @@
+@startuml
+@enduml
+@startuml
+class Scarsello {
+}
+
+class Alfiere {
+    - scacchiera: String[][]
+    + Alfiere()
+    + colorescacchiera(mossa: char[]): char
+    + turni(tc: String): void
+    + input(t: String): void
+    + controllol(lettera: char): boolean
+    + controllon(numeroc: char): boolean
+    + controllop(pedina: char): boolean
+    + controllomovimento(mossa: char[]): boolean
+    + controllocolore(mossa: char[]): boolean
+}
+
+Scarsello --> Alfiere
+@enduml
